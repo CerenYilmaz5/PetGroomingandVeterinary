@@ -38,8 +38,8 @@
             addressTextbox = new TextBox();
             addButton = new Button();
             refreshButton = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            customerDataGridView = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)customerDataGridView).BeginInit();
             SuspendLayout();
             // 
             // customerNameLabel
@@ -125,21 +125,21 @@
             refreshButton.Text = "Refresh";
             refreshButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // customerDataGridView
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(33, 302);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(989, 342);
-            dataGridView1.TabIndex = 10;
+            customerDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            customerDataGridView.Location = new Point(33, 302);
+            customerDataGridView.Name = "customerDataGridView";
+            customerDataGridView.RowHeadersWidth = 51;
+            customerDataGridView.Size = new Size(989, 342);
+            customerDataGridView.TabIndex = 10;
             // 
             // Customer
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1050, 676);
-            Controls.Add(dataGridView1);
+            Controls.Add(customerDataGridView);
             Controls.Add(refreshButton);
             Controls.Add(addButton);
             Controls.Add(addressTextbox);
@@ -154,7 +154,7 @@
             Margin = new Padding(6);
             Name = "Customer";
             Text = "Customer";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)customerDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,6 +171,6 @@
         private TextBox addressTextbox;
         private Button addButton;
         private Button refreshButton;
-        private DataGridView dataGridView1;
+        private DataGridView customerDataGridView;
     }
 }

@@ -32,7 +32,7 @@ namespace PetGroomingandVeterinary
             try
             {
                 string query = "SELECT * FROM Employees WHERE EmployeeName = @Username AND Password = @Password";
-                using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\HP\\source\\repos\\PetGroomingandVeterinary\\PetDb.db;Version=3;"))
+                using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\emirh\\source\\repos\\PetAppointmentProject\\PetDB.db;Version=3;"))
                 {
                     connection.Open();
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
