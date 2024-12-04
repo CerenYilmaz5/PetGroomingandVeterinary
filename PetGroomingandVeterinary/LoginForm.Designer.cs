@@ -52,7 +52,7 @@
             passwordLabel.Size = new Size(150, 41);
             passwordLabel.TabIndex = 1;
             passwordLabel.Text = "Password:";
-            passwordLabel.Click += passwordLabel_Click;
+            
             // 
             // userNameTextbox
             // 
@@ -92,6 +92,7 @@
             Margin = new Padding(6);
             Name = "LoginForm";
             Text = "LoginScreen";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -73,6 +73,7 @@
             Margin = new Padding(6);
             Name = "WorkSpace";
             Text = "WorkSpace";
+            Load += WorkSpace_Load;
             ResumeLayout(false);
         }
 

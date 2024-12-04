@@ -37,15 +37,15 @@
             emailTextbox = new TextBox();
             addressTextbox = new TextBox();
             addButton = new Button();
-            refreshButton = new Button();
             customerDataGridView = new DataGridView();
+            updateButton1 = new Button();
             ((System.ComponentModel.ISupportInitialize)customerDataGridView).BeginInit();
             SuspendLayout();
             // 
             // customerNameLabel
             // 
             customerNameLabel.AutoSize = true;
-            customerNameLabel.Location = new Point(53, 59);
+            customerNameLabel.Location = new Point(53, 29);
             customerNameLabel.Name = "customerNameLabel";
             customerNameLabel.Size = new Size(241, 41);
             customerNameLabel.TabIndex = 0;
@@ -54,7 +54,7 @@
             // phoneNumberLabel
             // 
             phoneNumberLabel.AutoSize = true;
-            phoneNumberLabel.Location = new Point(67, 112);
+            phoneNumberLabel.Location = new Point(67, 85);
             phoneNumberLabel.Name = "phoneNumberLabel";
             phoneNumberLabel.Size = new Size(227, 41);
             phoneNumberLabel.TabIndex = 1;
@@ -63,7 +63,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(186, 167);
+            emailLabel.Location = new Point(186, 135);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new Size(108, 41);
             emailLabel.TabIndex = 2;
@@ -72,7 +72,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new Point(162, 218);
+            addressLabel.Location = new Point(162, 192);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new Size(132, 41);
             addressLabel.TabIndex = 3;
@@ -80,50 +80,41 @@
             // 
             // customerNameTextbox
             // 
-            customerNameTextbox.Location = new Point(310, 59);
+            customerNameTextbox.Location = new Point(300, 29);
             customerNameTextbox.Name = "customerNameTextbox";
-            customerNameTextbox.Size = new Size(261, 47);
+            customerNameTextbox.Size = new Size(616, 47);
             customerNameTextbox.TabIndex = 4;
             // 
             // phoneNumberTextbox
             // 
-            phoneNumberTextbox.Location = new Point(310, 112);
+            phoneNumberTextbox.Location = new Point(300, 82);
             phoneNumberTextbox.Name = "phoneNumberTextbox";
-            phoneNumberTextbox.Size = new Size(261, 47);
+            phoneNumberTextbox.Size = new Size(616, 47);
             phoneNumberTextbox.TabIndex = 5;
             // 
             // emailTextbox
             // 
-            emailTextbox.Location = new Point(310, 167);
+            emailTextbox.Location = new Point(300, 135);
             emailTextbox.Name = "emailTextbox";
-            emailTextbox.Size = new Size(261, 47);
+            emailTextbox.Size = new Size(616, 47);
             emailTextbox.TabIndex = 6;
             // 
             // addressTextbox
             // 
-            addressTextbox.Location = new Point(310, 220);
+            addressTextbox.Location = new Point(300, 192);
             addressTextbox.Name = "addressTextbox";
-            addressTextbox.Size = new Size(261, 47);
+            addressTextbox.Size = new Size(616, 47);
             addressTextbox.TabIndex = 7;
             // 
             // addButton
             // 
-            addButton.Location = new Point(710, 59);
+            addButton.Location = new Point(644, 245);
             addButton.Name = "addButton";
-            addButton.Size = new Size(186, 92);
+            addButton.Size = new Size(186, 47);
             addButton.TabIndex = 8;
             addButton.Text = "Add";
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
-            // 
-            // refreshButton
-            // 
-            refreshButton.Location = new Point(710, 175);
-            refreshButton.Name = "refreshButton";
-            refreshButton.Size = new Size(186, 92);
-            refreshButton.TabIndex = 9;
-            refreshButton.Text = "Refresh";
-            refreshButton.UseVisualStyleBackColor = true;
             // 
             // customerDataGridView
             // 
@@ -133,14 +124,25 @@
             customerDataGridView.RowHeadersWidth = 51;
             customerDataGridView.Size = new Size(989, 342);
             customerDataGridView.TabIndex = 10;
+            customerDataGridView.CellContentClick += customerDataGridView_CellContentClick;
+            // 
+            // updateButton1
+            // 
+            updateButton1.Location = new Point(836, 245);
+            updateButton1.Name = "updateButton1";
+            updateButton1.Size = new Size(186, 47);
+            updateButton1.TabIndex = 11;
+            updateButton1.Text = "Update";
+            updateButton1.UseVisualStyleBackColor = true;
+            updateButton1.Click += updateButton_Click;
             // 
             // Customer
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1050, 676);
+            Controls.Add(updateButton1);
             Controls.Add(customerDataGridView);
-            Controls.Add(refreshButton);
             Controls.Add(addButton);
             Controls.Add(addressTextbox);
             Controls.Add(emailTextbox);
@@ -170,7 +172,7 @@
         private TextBox emailTextbox;
         private TextBox addressTextbox;
         private Button addButton;
-        private Button refreshButton;
         private DataGridView customerDataGridView;
+        private Button updateButton1;
     }
 }

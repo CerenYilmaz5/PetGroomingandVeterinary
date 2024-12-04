@@ -22,5 +22,10 @@ namespace PetGroomingandVeterinary
             Customer customer = new Customer();
             customer.Show();
         }
+
+        private void WorkSpace_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
